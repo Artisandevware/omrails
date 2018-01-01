@@ -38,7 +38,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
  # Use Postgres as the database for Active Record
- gem 'pg'
+ gem 'pg', '~> 2.1.1'
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
 end
@@ -54,5 +54,5 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 2.1.1'
 end

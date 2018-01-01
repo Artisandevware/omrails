@@ -35,7 +35,7 @@ gem 'pg', '~> 0.21.0'
 
 gem 'hoe', '~> 3.16', '>= 3.16.2'
 gem 'hoe-bundler', '~> 1.3'
-gem 'hoe-deveiate', '~> 0.9.0'
+#gem 'hoe-deveiate', '~> 0.9.0'
 gem 'hoe-highline', '~> 0.2.1'
 gem 'hoe-mercurial', '~> 1.4', '>= 1.4.1'
 gem 'rake-compiler', '~> 1.0', '>= 1.0.4'

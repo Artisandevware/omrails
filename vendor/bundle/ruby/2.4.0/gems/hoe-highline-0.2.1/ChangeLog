@@ -1,0 +1,69 @@
+2014-04-05  Michael Granger  <ged@FaerieMUD.org>
+
+	* History.rdoc, lib/hoe/highline.rb:
+	Bump minor version, update history.
+	[96a833abcc47] [tip]
+
+	* README.rdoc, Rakefile, lib/hoe/highline.rb:
+	Use less-specific version for dev deps.
+
+	Also:
+	- Updated copyright date.
+	- Updated hoe and minimum Ruby versions.
+	[9c6bb85b6fa4]
+
+	* .rvm.gems, .rvmrc:
+	Update rvmrc and gemset
+	[26b1ea27350a]
+
+2012-03-28  Michael Granger  <ged@FaerieMUD.org>
+
+	* .hgtags:
+	Added tag v0.1.0 for changeset 525f05df1be4
+	[7ce9a9afc218]
+
+	* .hgsigs:
+	Added signature for changeset 1906bc4932fa
+	[525f05df1be4] [v0.1.0]
+
+	* Manifest.txt:
+	Update manifest
+	[1906bc4932fa]
+
+	* .hgignore, .rvm.gems, .rvmrc, History.md, History.rdoc,
+	Manifest.txt, README.md, README.rdoc, Rakefile, lib/hoe/highline.rb:
+	Updated for Hoe 3.
+	[0b79211d0a74]
+
+2011-10-06  Michael Granger  <ged@FaerieMUD.org>
+
+	* .hgignore:
+	Adding ignore file
+	[68b53c68a112]
+
+2011-03-12  Michael Granger  <ged@FaerieMUD.org>
+
+	* .hgtags:
+	Added tag v0.0.1 for changeset f9a3499e47b2
+	[6cb01cee05f5]
+
+	* .hgsigs:
+	Added signature for changeset 4a7fd6f5e4ce
+	[f9a3499e47b2] [v0.0.1]
+
+	* README.md, Rakefile:
+	Fixed some README and demo stuff.
+	[4a7fd6f5e4ce]
+
+	* Rakefile:
+	Added dependency on Hoe itself.
+	[09a1581eede1]
+
+	* .autotest:
+	Remove unused autotest config
+	[611cdca315db]
+
+	* .autotest, History.md, Manifest.txt, README.md, Rakefile,
+	lib/hoe/highline.rb:
+	Initial version
+	[12c9e44f7d0e]

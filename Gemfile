@@ -48,7 +48,7 @@ group :development, :test do
   gem 'capybara', '~> 2.17'
   #gem 'compass', '~> 1.0', '>= 1.0.3'
   gem 'selenium-webdriver'
-  gem 'sqlite3'
+  gem 'pg'
   
 end
 
@@ -64,9 +64,10 @@ gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
 gem 'term-ansicolor', '~> 1.6'
 end
 
-group :production do
-gem 'pg'
-end
+#group :production do
+
+#end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-#gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

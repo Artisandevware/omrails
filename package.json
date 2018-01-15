@@ -1,5 +1,27 @@
 {
-  "name": "Omrails",
+  "name": "omrails",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "version": "1.0.0",
+  "description": "one month training app",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Artisandevware/omrails.git"
+  },
+  "author": "Russell Hrycko <simpleeyeholdings@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Artisandevware/omrails/issues"
+  },
+  "homepage": "https://github.com/Artisandevware/omrails#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": []
 }

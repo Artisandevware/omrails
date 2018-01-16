@@ -10,7 +10,6 @@ end
 gem 'rails', '~> 5.1.4'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
-gem 'sqlite3', '~> 1.3', '>= 1.3.13'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.7'
 #gem 'sass', '~> 3.5', '>= 3.5.5'
@@ -49,6 +48,7 @@ group :development, :test do
   gem 'capybara', '~> 2.17'
   #gem 'compass', '~> 1.0', '>= 1.0.3'
   gem 'selenium-webdriver'
+  gem 'sqlite3', '~> 1.3', '>= 1.3.13'
 
   
 end

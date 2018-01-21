@@ -37,6 +37,7 @@ gem 'poltergeist', '~> 1.17'
 gem 'slim-rails', '~> 3.1', '>= 3.1.3'
 gem 'devise'
 gem 'activeadmin', '~> 1.2', '>= 1.2.1'
+#gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

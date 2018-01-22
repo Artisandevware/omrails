@@ -8,12 +8,12 @@ class TweetsController < ApplicationController
 
   # GET /tweets/1
   def show
-  #  @tweet = Tweet.find(params[:id])
+    @tweet = Tweet.find(params[:id])
   end
 
   # GET /tweets/new
   def new
-    @tweet = current_user.tweets.new
+    @tweet = Tweet.new
   end
 
   # GET /tweets/1/edit
@@ -23,8 +23,9 @@ class TweetsController < ApplicationController
 
   # POST /tweets
   def create
-    @tweet = Tweet.new(tweet_params)
+    @tweet = Tweet.new(params[:id])
     respond_to do |format|
+      #@tweet = current_user.tweets.find(params[:id])
     if @tweet.save
       format.html { redirect_to @tweet, notice: 'Tweet was successfully created.'}
       format.json { render :show, status: :created, location: @tweet }

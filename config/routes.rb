@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   delete "signout" => 'devise/sessions#destroy'
   get "signup" => 'devise/registrations#new'
   end
-  root 'pages#home'
+  root '/'
   get 'blog' => 'pages#blog'
   get 'contact' => 'pages#contact'
 

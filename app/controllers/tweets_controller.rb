@@ -1,5 +1,4 @@
 class TweetsController < ApplicationController
-  before_action :set_tweet, only: [:show, :edit, :update, :destroy]
 
   # GET /tweets
   def index
@@ -18,53 +17,40 @@ class TweetsController < ApplicationController
 
   # GET /tweets/1/edit
   def edit
-    #@tweet = current_user.tweets.find(params[:id])
+    @tweet = Tweet.find(params[:id])
   end
 
   # POST /tweets
   def create
-    @tweet = Tweet.new(params[:id])
-    respond_to do |format|
-      #@tweet = current_user.tweets.find(params[:id])
+    @tweet = Tweet.new(tweet_params)
     if @tweet.save
-      format.html { redirect_to @tweet, notice: 'Tweet was successfully created.'}
-      format.json { render :show, status: :created, location: @tweet }
+      redirect_to @tweet, notice: 'Tweet was successfully created.'
     else
-      format.html { render :new } 
-      format.json { render json: @tweet.errors, status: :unprocessable }
+      render :new 
     end
   end
-end
+
   # PATCH/PUT /tweets/1
   def update
-    respond_to do |format|
-    #@tweet = current_user.tweets.find(params[:id])
+    @tweet = Tweet.find(params[:id])
     if @tweet.update(tweet_params)
-      format.html { redirect_to @tweet, notice: 'Tweet was successfully updated.'}
-      format.json { render :show, status: :ok, location: @tweet } 
+      redirect_to @tweet, notice: 'Tweet was successfully updated.'
     else
-      format.html { render :edit }
-      format.json { render json: @tweet.errors, status: :unprocessable }
-    end 
+      render :edit
     end
   end
 
   # DELETE /tweets/1
   def destroy
+    @tweet = Tweet.find(params[:id])
     @tweet.destroy
-    respond_to do |format|
-    #@tweet = current_user.tweets.find(params[:id])
-    format.html { redirect_to tweets_url, notice: 'Tweet was successfully destroyed.' }
-    format.json { head :no_content }
+    redirect_to tweets_url, notice: 'Tweet was successfully destroyed.'
   end
-end
 
   private
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tweet_params
-      params.require(:tweet).permit(:user_id, :content)
+      params.require(:tweet).permit(:content)
     end
-  end
-
-
+end
